@@ -19,6 +19,7 @@ var db, _ = connections.NewPGSQLConnection()
 
 func NewDevicesDAO() (*devicedao, error) {
 	dts := db.PGSQLConnection()
+
 	return &devicedao{dts}, nil
 }
 
